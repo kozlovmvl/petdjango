@@ -13,6 +13,15 @@ psycopg2 = "^2.9.9"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^8.0.2"
+ruff = "^0.3.0"
+pre-commit = "^3.6.2"
+
+[tool.ruff]
+include = ["*.py"]
+fix-only = true
+
+[tool.ruff.lint]
+select = ["E4", "E7", "E9", "F", "I"]
 
 [build-system]
 requires = ["poetry-core"]

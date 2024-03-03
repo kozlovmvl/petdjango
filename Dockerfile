@@ -5,4 +5,4 @@ workdir /var/www/
 copy ./src ./src
 copy ./pyproject.toml .
 run pip install poetry
-run poetry install
+run poetry install --no-dev
